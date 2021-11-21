@@ -199,68 +199,69 @@ Shared [
 
 ##### A risk manager will study the contract proposal and alert on different risk the bank must operate
 1. Risk of delivery
-1.1 Risk of WAR
-1.2 Risk of Embargo
-1.3 Risk of Fraud
-1.4 Risk of sink
-1.5 Risk of fail Docking/Piratry/Path extension
-1.6 Risk of time quality
-1.7 Risk of delivery-rejection
-1.8 Risk of false assertion
-1.9 Risk of capacity
-2. Risk of valuation
-2.1 Risk of energy intrinsec value
-2.2 Risk of audit of content
-2.3 Risk of climat
-2.4 Risk of usuability
-2.5 Risk of opportunity
-2.6 Risk of cash seized
-2.7 Risk of hedging short mid and long term
-3. Risk of reputation
-3.1 Asses each counterparty and politic terms until maturity
-3.2 Superview of cash flow and impact on internal flow
-3.3 Impact on quality of system, man, control and audit
-3.4 Running the bank according to each regulators requisit
-3.4.1 Follow each line of conducts
-3.4.2 Plan audit and report
-3.4.3 Secure people, secure data, secure organisation
-4. Risk of operations
-4.1 Control contract can be done 
-4.2 Verifiy operations are runnable
-4.3 Check operations are not implying emprise or been chained by sub value ( reverse emprise )
-4.4 Check Liquidity and reversability cost
-4.5 Check settlement date and delivery date have market counterpart or inline with cash buffer
-4.6 Check impact on schedule charge
-5. Risk of Cash control
-5.1 Where is the cash
-5.2 Who own the cash
-5.3 Who need to pay
-5.4 Who is in charge to check and audit
-5.5 Who still has the full picture of the deal
-6. Risk of non auditable values
-6.1 Static data review 
-6.2 Business event reevaluation
-6.3 Compliance alert
-6.4 Due diligence failures
-6.5 System failures
-6.6 Human failures
-6.7 Customers failures
-7. Risk of Fraud multi parties/ Piratry/ Mafia/ Terrorist/ Countries politics
-7.1 Country referals
-7.2 Country health care system or policy for alien agent
-7.3 Country level of investments against fraud/mafia/corruption
-7.4 Country credit score for Cash Safety and Transaction Supervised
-7.5 Region credit score for Cash Safety and Transaction Supervised
-7.6 Local credit score for Cash Safety and Transaction Supervised
 
+  1.1 Risk of WAR
+  
+    1.2 Risk of Embargo
+    1.3 Risk of Fraud
+    1.4 Risk of sink
+    1.5 Risk of fail Docking/Piratry/Path extension
+    1.6 Risk of time quality
+    1.7 Risk of delivery-rejection
+    1.8 Risk of false assertion
+    1.9 Risk of capacity
+2. Risk of valuation
+    2.1 Risk of energy intrinsec value
+    2.2 Risk of audit of content
+    2.3 Risk of climat
+    2.4 Risk of usuability
+    2.5 Risk of opportunity
+    2.6 Risk of cash seized
+    2.7 Risk of hedging short mid and long term
+3. Risk of reputation
+    3.1 Asses each counterparty and politic terms until maturity
+    3.2 Superview of cash flow and impact on internal flow
+    3.3 Impact on quality of system, man, control and audit
+    3.4 Running the bank according to each regulators requisit
+        3.4.1 Follow each line of conducts
+        3.4.2 Plan audit and report
+        3.4.3 Secure people, secure data, secure organisation
+4. Risk of operations
+    4.1 Control contract can be done 
+    4.2 Verifiy operations are runnable
+    4.3 Check operations are not implying emprise or been chained by sub value ( reverse emprise )
+    4.4 Check Liquidity and reversability cost
+    4.5 Check settlement date and delivery date have market counterpart or inline with cash buffer
+    4.6 Check impact on schedule charge
+5. Risk of Cash control
+    5.1 Where is the cash
+    5.2 Who own the cash
+    5.3 Who need to pay
+    5.4 Who is in charge to check and audit
+    5.5 Who still has the full picture of the deal
+6. Risk of non auditable values
+    6.1 Static data review 
+    6.2 Business event reevaluation
+    6.3 Compliance alert
+    6.4 Due diligence failures
+    6.5 System failures
+    6.6 Human failures
+    6.7 Customers failures
+7. Risk of Fraud multi parties/ Piratry/ Mafia/ Terrorist/ Countries politics
+    7.1 Country referals
+    7.2 Country health care system or policy for alien agent
+    7.3 Country level of investments against fraud/mafia/corruption
+    7.4 Country credit score for Cash Safety and Transaction Supervised
+    7.5 Region credit score for Cash Safety and Transaction Supervised
+    7.6 Local credit score for Cash Safety and Transaction Supervised
 8. Risk of Credit
-8.1 Credit analystics planning ( every month/ every quarter/ every year )
-8.2 Debt structuration
-8.3 Debt chain on the bank
-8.4 Margin vs Insurance ( shariah compliance included )
-8.5 Settlement place and process
-8.6 Defaults penalties agreement vs Default requesting Court and defender
-8.7 Collateral vs Insurance vs Compute agent vs Bank protection
+    8.1 Credit analystics planning ( every month/ every quarter/ every year )
+    8.2 Debt structuration
+    8.3 Debt chain on the bank
+    8.4 Margin vs Insurance ( shariah compliance included )
+    8.5 Settlement place and process
+    8.6 Defaults penalties agreement vs Default requesting Court and defender
+    8.7 Collateral vs Insurance vs Compute agent vs Bank protection
 
 ##### The Structurer
 he will alert payment each month has no market value counterpart for pillar 7months, 8months and 9months
@@ -335,10 +336,10 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free API Key at [https://bank4all.github.io](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/bank4all/repo_name.git
    ```
 3. Install NPM packages
    ```sh
@@ -367,7 +368,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [] Feature 1
+- [] Auto  1
 - [] Feature 2
 - [] Feature 3
     - [] Nested Feature
@@ -399,7 +400,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the BANK4ALL License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -427,18 +428,5 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+Country Code Link: https://www.iso.org/obp/ui/#iso:pub:PUB500001:en
+
