@@ -202,65 +202,124 @@ Shared [
 
   1.1 Risk of WAR
   
-    1.2 Risk of Embargo
-    1.3 Risk of Fraud
-    1.4 Risk of sink
-    1.5 Risk of fail Docking/Piratry/Path extension
-    1.6 Risk of time quality
-    1.7 Risk of delivery-rejection
-    1.8 Risk of false assertion
-    1.9 Risk of capacity
+  1.2 Risk of Embargo
+  
+  1.3 Risk of Fraud
+  
+  1.4 Risk of sink
+  
+  1.5 Risk of fail Docking/Piratry/Path extension
+  
+  1.6 Risk of time quality
+  
+  1.7 Risk of delivery-rejection
+  
+  1.8 Risk of error unreversible
+  
+  1.9 Risk of capacity
+  
 2. Risk of valuation
+    
     2.1 Risk of energy intrinsec value
+    
     2.2 Risk of audit of content
+    
     2.3 Risk of climat
+    
     2.4 Risk of usuability
+    
     2.5 Risk of opportunity
+    
     2.6 Risk of cash seized
+    
     2.7 Risk of hedging short mid and long term
+
 3. Risk of reputation
+    
     3.1 Asses each counterparty and politic terms until maturity
+    
     3.2 Superview of cash flow and impact on internal flow
+    
     3.3 Impact on quality of system, man, control and audit
+    
     3.4 Running the bank according to each regulators requisit
+        
         3.4.1 Follow each line of conducts
+        
         3.4.2 Plan audit and report
+        
         3.4.3 Secure people, secure data, secure organisation
+
 4. Risk of operations
+    
     4.1 Control contract can be done 
+    
     4.2 Verifiy operations are runnable
+    
     4.3 Check operations are not implying emprise or been chained by sub value ( reverse emprise )
+    
     4.4 Check Liquidity and reversability cost
+    
     4.5 Check settlement date and delivery date have market counterpart or inline with cash buffer
+    
     4.6 Check impact on schedule charge
+
 5. Risk of Cash control
+    
     5.1 Where is the cash
+    
     5.2 Who own the cash
+    
     5.3 Who need to pay
+    
     5.4 Who is in charge to check and audit
+    
     5.5 Who still has the full picture of the deal
+
 6. Risk of non auditable values
+    
     6.1 Static data review 
+    
     6.2 Business event reevaluation
+    
     6.3 Compliance alert
+    
     6.4 Due diligence failures
+    
     6.5 System failures
+    
     6.6 Human failures
+    
     6.7 Customers failures
+
 7. Risk of Fraud multi parties/ Piratry/ Mafia/ Terrorist/ Countries politics
+    
     7.1 Country referals
+    
     7.2 Country health care system or policy for alien agent
+    
     7.3 Country level of investments against fraud/mafia/corruption
+    
     7.4 Country credit score for Cash Safety and Transaction Supervised
+    
     7.5 Region credit score for Cash Safety and Transaction Supervised
+    
     7.6 Local credit score for Cash Safety and Transaction Supervised
+
 8. Risk of Credit
+    
     8.1 Credit analystics planning ( every month/ every quarter/ every year )
+    
     8.2 Debt structuration
+    
     8.3 Debt chain on the bank
+    
     8.4 Margin vs Insurance ( shariah compliance included )
+    
     8.5 Settlement place and process
+    
     8.6 Defaults penalties agreement vs Default requesting Court and defender
+    
     8.7 Collateral vs Insurance vs Compute agent vs Bank protection
 
 ##### The Structurer
@@ -312,42 +371,46 @@ Sign or delegate some responsabilities
 
 ##### The automatician
 Receive a new demand of running a product decomposed as BRENT95 futures, requesting 12 banking event
-For Payment -> Insure Backoffice Treasure cluster can upload the charge of works and how many backup are updated
-For Compliance -> Insure Compliance system can turn within the time limit
-For RiskOp -> Projection of cost of CPU/GPU 
-For Storage -> Check capacity of database
-For Internet -> Check data provided extra cost for new asset market value
-For audit -> Check who have access, read , write, modify only once, stamp, testify
-For Report -> Add new ligne ( auto or manual )
-For TaskRunningBank -> Check Transaction is processed , stamped and in the correct state of been run by automate
-For Cleaning -> Check Logs and Ownership can reverse, can extract and can prove before/while and after
-For History -> Check operations can be reinstalled on new updated version ( time compability of bank event chain )
+- For Payment -> Insure Backoffice Treasure cluster can upload the charge of works and how many backup are updated
+- For Compliance -> Insure Compliance system can turn within the time limit
+- For RiskOp -> Projection of cost of CPU/GPU 
+- For Storage -> Check capacity of database
+- For Internet -> Check data provided extra cost for new asset market value
+- For audit -> Check who have access, read , write, modify only once, stamp, testify
+- For Report -> Add new ligne ( auto or manual )
+- For TaskRunningBank -> Check Transaction is processed , stamped and in the correct state of been run by automate
+- For Cleaning -> Check Logs and Ownership can reverse, can extract and can prove before/while and after
+- For History -> Check operations can be reinstalled on new updated version ( time compability of bank event chain )
 
-##### The 
+##### The audit
+He will endorse the role of conformity and store all legal document required for any trials with his signature of quality control
+
+He has control over list of counterparties for entity to entity block and regulator segment of activity as well as insure wall between transaction are effective
+
 
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+To run a task , you will need to have a desktop PC or any device with a Screen large enought to overview a array of data .. at minima a screen displaying 17" of information 
+
+You will also need to have an internet connection for valuation or pricing, for 4eyes proof, for clustering)key and cross referential keys and shared signature
+
+finally you will need to install a Bank4all VM and insert your claim of running a task
+
 * npm
   ```sh
-  npm install npm@latest -g
+  npm install bank4all@latest -g
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://bank4all.github.io](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/bank4all/repo_name.git
    ```
 3. Install NPM packages
    ```sh
    npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
