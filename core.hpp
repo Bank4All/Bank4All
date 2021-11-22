@@ -37,6 +37,14 @@ using namespace std;
 //   5.1 changing vector<string> into char[max length known+1][nb counterparties know]; is still possible
 //   5.2 optimization by tupling ( render country fully serialisable is same as creating a type of string wrapping an array of char)
 //      We then refrain to use as much as possible STL algorithm convenient operator of std::string whenever it is possible in header
+// 6. To avoid unecssary extra work later, we include the remarks that a fully serialised country data should fit into FIX message
+//   6.1 After debat we still reject to use FAST protocole for country and counterparty data bulk mode for several reason, versatility and programmed obsolete features
+//   6.2 Most FIX actor use PRAGMA POP and PRAGMA PUSH to align data, as we push toward a shuffled by alphatic order structure, we also imply non fixed size
+//   6.3 Arabic alphabet revese order, Kanji and Cyrilic could lead to catastrophic effect for pure aligned serialized message, hence we conclude that google proto will be used
+//     among participant to exchange data with their own cluster
+//  7. BSON format and its father JSON should be accepted as an entry , mostly vanilla JSON 
+//   7.1 Example : https://github.com/samayo/country-json/blob/master/src/country-by-abbreviation.json
+//   7.2 BSON or JSON validated at least by /[^,:{}\[\]0-9.\-+Eaeflnr-u \n\r\t]  ** RFC4627, section 6 should be of minimal code
 
 
 #ifndef COUNTRY_SERIALISED_4FAST_USAGE
