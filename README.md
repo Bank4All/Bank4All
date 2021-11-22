@@ -488,7 +488,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 ## Acknowledgments
 
 * [https://www.leiroc.org/lei/lei_regulatory_uses.htm](https://www.leiroc.org/lei/lei_regulatory_uses.htm)
-* []()
+* [https://www.legislation.gov.uk/ukpga/1998/11/contents](https://www.legislation.gov.uk/ukpga/1998/11/contents)
 * []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
