@@ -3,11 +3,49 @@
 #include <httplib.h>  // https://bestofcpp.com/repo/yhirose-cpp-httplib-cpp-network
 #include <iostream>
 #include <regex>
+#include <cstdint>
 
 using namespace std;
 
+// we do not create a memory binded/aligned tuple structure for country and counterparty
+
+// 1. Decentralized methods will create mostly a non aligned view of what a country is
+//   Example of different level of country misleading : France, Adeleide, Martinique
+//       IsoCountry France = FR, IsoCountry Terre Adélie = blank , IsoCountry Martinique = MQ
+//       Transaction BNP Martinique Iso Country = FR
+//       Transaction SG Martinique Iso Country = MQ
+//       Transaction Martinique Collectivity Territorial IsoCountryCode = MQ
+//       Transaction Martinique IEDOM IsoCountryCode = FR
+//       Transaction Terre Adelie IsoCountryCode = TAFF
+//       Transaction Mission Orga Terre Adelie IsoCountryCode = FR
+// 2. To avoid externalisation of rules from country, we choose to enrich counterparty by anonymous property
+//       consensus for property name will be done outside of coding, hence generic way of represent a country will
+//       be leaded by an external dictionnary 
+// 3. Clustering 
+//  3.1 Country are data typed [Write by History], as such we propose to shuffle by alphqbetic order id into the vector host
+//  3.2 Trade off between intrinsec performance ( direct access property ) versus ( carried indexation ), we accept to loose speed
+//    3.2.1 Experience show that country code and impact on rules are run few times, they can be cached strongly and fully decentralised
+//    3.2.2 Limit by country are Barrier type ( MIN , MAX , exception Listed )
+//    3.2.3 Limit by orga , association and else are as far as today cumulated value , we don't suffer problem of integration accross of tree within a context of decentralisation
+// 4. Acceptance of proposal model
+//   4.1 Iso Country 2 CHAR and 3 CHAR are consistent and used by everyone
+//   4.2 For finance and insurance, FIX use Iso Code 2 CHAR 
+//   4.3 To create a fast order operator we propose [\t2] and [\t3] for ISO CODE -2 and ISO CODE -3 property name, and no acceptance of any property name starting with \t but those 2
+//      It will insure ISO CODE are always first property in the data list of property
+//      country crv; crv.data[0] = ISOCODE-2 and crv.data[1] = ISOCODE-3
+// 5. In case of serious performance issue ( mostly to run a full FCB-LB and a Stress TEST )
+//   5.1 changing vector<string> into char[max length known+1][nb counterparties know]; is still possible
+//   5.2 optimization by tupling ( render country fully serialisable is same as creating a type of string wrapping an array of char)
+//      We then refrain to use as much as possible STL algorithm convenient operator of std::string whenever it is possible in header
+
+
+#ifndef COUNTRY_SERIALISED_4FAST_USAGE
+typedef vector<string> country_property;
+#endif
+
 struct country {
-  
+  country_property data;
+  static map<string, uint_fast16_t> property_name;
 }
 
 int main(void)
