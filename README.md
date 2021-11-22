@@ -1,10 +1,3 @@
--  @Bank4All
-- 👀 I’m interested in creating a Bank free of non chained workers to operate, all people who know the job of banking activity should be free to participate and earn a task/rate
-- Cash and Transaction are 2 different things that often people confuse or refuse to seperate. 
-- 💞️ I’m looking to collaborate on all bank activity decentralised for people to freely join and stamp a task for running the bank
-- 📫 How to reach me , daniel.boutrin@gmail.com
-
-
 <div id="top"></div>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -420,7 +413,18 @@ finally you will need to install a Bank4all VM and insert your claim of running 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+You will need a device abble to run Open your Bank4all Role List
+
+Choose a role , once done, you will automatically been ask to receive automate to run
+
+Automate provided by Bank4all are of multitles types
+
+Write once
+Write by History
+Write by Chain
+Write by Workflow
+Write and forget
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
