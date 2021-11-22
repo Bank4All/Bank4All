@@ -487,7 +487,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* [https://www.leiroc.org/lei/lei_regulatory_uses.htm](https://www.leiroc.org/lei/lei_regulatory_uses.htm)
 * []()
 * []()
 
