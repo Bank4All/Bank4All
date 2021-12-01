@@ -380,7 +380,13 @@ He will endorse the role of conformity and store all legal document required for
 
 He has control over list of counterparties for entity to entity block and regulator segment of activity as well as insure wall between transaction are effective
 
+He need to insure all banking activity and control has been checked, enforced and will not risk the activity to be stopped or unrecognized or worst allow violation of regulators rules
 
+- Highly difficult : Business validator of LAW text translater into Rules and Constraints
+- Very difficult : Identify loophole of circular exposure
+- Difficult : Validate complete transactions traces and report at any given time a full control of sides
+- Average : Monitor how rules are applied, and verify perimeter and scope are clearly identified at referential level
+- Medium : Validate impersonation, Business event, 
 
 ### Prerequisites
 
