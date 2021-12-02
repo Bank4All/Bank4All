@@ -39,17 +39,85 @@
 //   As such ADA is far more superior when explaining in Court Case of failure in Code , Automate or Business impact
 //   Automate for Trading send you to court, so be smart and serious
 
-#include <boost/endian/buffers.hpp>  
+#include <iostream>
+#include <cstdlib>
+#include <boost/endian/arithmetic.hpp>
 
+using namespace boost::endian;
+using namespace std;
 
-namespace highfrequency
-{
+template <unsigned int N,unsigned int M>
+void symbol_copy(char* symbol,const char* src) {
+    if(N!=(M/8)*8) 
+    {
+        symbol[N]=src[N];
+        symbol_copy<N+1,M>(symbol,src);
+    }
+    
+};
 
-template<char[4]>
-struct char_symbol{
-}
-  
-}
+template <unsigned int M>
+void symbol_copy(char* symbol,const char* src) {
+    symbol[M-1]=0;
+    symbol_copy<0,M>(symbol , src);
+};
+
+union chrcode4_t {
+    big_int32_t code;
+    char symbol[4];
+    
+    chrcode4_t(const char* desc) {
+        symbol_copy<8>(symbol , desc);
+        // symbol[0]=desc[0];
+        // symbol[1]=desc[1];
+        // symbol[2]=desc[2];
+        // symbol[3]=0;
+    }
+    chrcode4_t(std::string& desc) {
+        symbol[0]=desc.at(0);
+        symbol[1]=desc.at(1);
+        symbol[2]=desc.at(2);
+        symbol[3]=0;
+    }
+    
+    friend ostream& operator<<(ostream& os, const chrcode4_t& ccd)
+    {
+        os << ccd.symbol;
+        return os;
+    }
+};
+
+union chrcode8_t {
+    big_int64_t code;
+    char symbol[8];
+    
+    chrcode8_t(const char* desc) {
+        symbol[0]=desc[0];
+        symbol[1]=desc[1];
+        symbol[2]=desc[2];
+        symbol[3]=desc[3];
+        symbol[4]=desc[4];
+        symbol[5]=desc[5];
+        symbol[6]=desc[6];
+        symbol[7]=0;
+    }
+    chrcode8_t(std::string& desc) {
+        symbol[0]=desc[0];
+        symbol[1]=desc[1];
+        symbol[2]=desc[2];
+        symbol[3]=desc[3];
+        symbol[4]=desc[4];
+        symbol[5]=desc[5];
+        symbol[6]=desc[6];
+        symbol[7]=0;
+    }
+    
+    friend ostream& operator<<(ostream& os, const chrcode8_t& ccd)
+    {
+        os << ccd.symbol;
+        return os;
+    }
+};
 
 
 
