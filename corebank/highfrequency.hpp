@@ -33,6 +33,23 @@
 //    One of the harddest part of low latency is to remove parrallel process doing a RAI out of nowhere
 //    Example : Plannified batch with the Zero Level Access Account, clear the cache of Harddrive
 //    Example worst : Emergency and forced KB from Microsoft that will halt all processes if not reboot the server
-//    Example of nighmare day : Duplicate IP connection or network packet duplication 
-//    Example of Bankrupt : Apache Kafka infernal overload loop triggered by audit stats
+
+// In general , SLA means trust no third party nor technologist who claim a lot but delivery poorly
+//   Sign your own statement as you face a prosecuror to defend yourself
+//   As such ADA is far more superior when explaining in Court Case of failure in Code , Automate or Business impact
+//   Automate for Trading send you to court, so be smart and serious
+
+#include <boost/endian/buffers.hpp>  
+
+
+namespace highfrequency
+{
+
+template<char[4]>
+struct char_symbol{
+}
+  
+}
+
+
 
