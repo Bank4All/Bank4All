@@ -27,6 +27,6 @@
 // - 1 unique container and a maximum of N! filters
 // - (N-P)! contrainers and P! filters
 
-// Dans l'univers des technologies, les transactions ACID se proposent d'apporter un protocole approx
-
+// Dans l'univers des technologies, les transactions ACID se proposent d'apporter un protocole approximatif
+// Une autre forme de solution est le triplet , fopen/fwrite/fclose
 
