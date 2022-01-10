@@ -1,0 +1,32 @@
+// Author : Daniel BOUTRIN
+// Synopsis : Minimal requirement for manage an account
+//            Element necessaire a la gestion de compte
+
+// A Cash Amount is a settled value that prove a physical/promise of delivery attached to a transaction contractless or not
+// Un montant est une valeur numerique prouvant ou marquant la promesse d'une livraison en regard a une transaction contractualise ou non
+
+
+// +---- Party A ------+------ Party B -----+    Audit A                   +   Audit B
+// !                   !                    !                              !
+// !  Amount , CCY     !                    !                              !
+// !   - Dec1, CCY     !    + Dec1, CCY     !    -Dec1, CCY, party B Ref   !  +Dec1, CCY, party B Ref
+// !   - Dec2, CCY     !    + Dec2, CCY     !    -Dec2, CCY, party B Ref   !  +Dec2, CCY, party B Ref
+// !             0     !              0     !                              !  
+// !             0     ! Balance , CCY      !      Balance , CCY           !  Balance , CCY
+// !                   !                    !                              !
+
+// In order to create this array, we need : 
+//     a container hold by party A
+//     a container hold by party B
+//     an audit container giving to party A, referencing Audit A
+
+// Pour generer ce tableau, il est donc necessaire d'avoir :
+//     un conteneur pour chaque parties et un audit
+
+// We do have to choose either :
+// - 1 unique container and a maximum of N! filters
+// - (N-P)! contrainers and P! filters
+
+// Dans l'univers des technologies, les transactions ACID se proposent d'apporter un protocole approx
+
+
