@@ -28,10 +28,11 @@
     <img src="https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgICAgICAgQVNTRVQtSE9MREVSIH18Li58eyBBU1NFVC1BRERSRVNTIDogaGFzXG4gICAgICAgICAgT1JERVIgfHwtLW97IEJVWUVSIDogcGxhY2VzXG4gICAgICAgICAgQVNTRVQtSE9MREVSIHx8LS1veyBJTlZPSUNFIDogXCJsaWFibGUgZm9yXCJcbiAgICAgICAgICBERUxJVkVSWS1BRERSRVNTIHx8LS1veyBPUkRFUiA6IHJlY2VpdmVzXG4gICAgICAgICAgSU5WT0lDRSB8fC0tfHsgT1JERVIgOiBjb3ZlcnNcbiAgICAgICAgICBPUkRFUiB8fC0tfHsgT1JERVItSVRFTSA6IGluY2x1ZGVzXG4gICAgICAgICAgUFJPRFVDVC1DQVRFR09SWSB8fC0tfHsgUFJPRFVDVCA6IGNvbnRhaW5zXG4gICAgICAgICAgUFJPRFVDVCB8fC0tb3sgT1JERVItSVRFTSA6IFwib3JkZXJlZCBpblwiXG4gICAgICAgICAgICAiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGFyayJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6ZmFsc2V9)" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">BANK4ALL</h3>
+<h3 align="center">Fond monetaire allouant par vote ( FMAPV )</h3>
+  <h3 align="center">Allocation by Vote monetary fund ( AVMF )</h3>
 
   <p align="center">
-    Bank 4 all, is a project that will decentralised all task required to run a bank activity, stamp of an claimed operation officer, a legal custody officer for endorsing the risk,
+    AVMF, is a project that will decentralised all task required to run a fund activity, stamp of an claimed operation officer, a legal custody officer for endorsing the risk,
     a fraud agent and regulatory reporter and clearer controler, etc.. 
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
