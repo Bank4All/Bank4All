@@ -391,11 +391,11 @@ To run a task , you will need to have a desktop PC or any device with a Screen l
 
 You will also need to have an internet connection for valuation or pricing, for 4eyes proof, for clustering)key and cross referential keys and shared signature
 
-finally you will need to install a Bank4all VM and insert your claim of running a task
+finally you will need to install a FMAPV VM and insert your claim of running a task
 
 * npm
   ```sh
-  npm install bank4all@latest -g
+  npm install FMAPV@latest -g
   ```
 
 ### Installation
@@ -416,7 +416,7 @@ finally you will need to install a Bank4all VM and insert your claim of running 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-You will need a device abble to run Open your Bank4all Role List
+You will need a device abble to run Open your FMAPV Role List
 
 Choose a role , once done, you will automatically been ask to receive automate to run
 
