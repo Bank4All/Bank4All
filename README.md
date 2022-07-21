@@ -79,7 +79,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![BANK4ALL][BK4A]](https://github.com/bank4all/BK4A.html)
+[![FMAPV][BK4A]](https://github.com/bank4all/BK4A.html)
 
 Main activity of a bank before receiving any cash or play the garantor for a transaction is to insure their own system are not compromised, corrupted or leaking
 
@@ -143,7 +143,7 @@ Conduct partnership, business developpement and investors relations , as it is a
 
 #### Example :
 
-Mohammed ben Salmane would like to limit the selling to 1 billion of Baril this year to 3 countries : France, USA, UK
+Mohammed Ben Salmane would like to limit the selling to 1 billion of Baril this year to 3 countries : France, USA, UK
 
 ##### The saleman
 He will have to run with a proposal on 3 contracts on 3 differents regulator
