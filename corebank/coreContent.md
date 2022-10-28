@@ -80,6 +80,14 @@ Horizontal problem  : client, trader, audit, supervisor, risk analysis will need
 
 Vertical problem: On each exposure  we  need to run deep into timeline to replay scenario and find worst case scenario to prevent future crisis
 
+Persistence and performance imply
 
+- Central = critical  server maintenance
+- Decentralised = Network coherency
+- Cloud/Host = Randsome & warfare
+- Multisite = Competences ressources
+
+
+          
 
 
