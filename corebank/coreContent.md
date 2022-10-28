@@ -66,7 +66,13 @@ Country : France, Angola , Republique du  Congo,  RDC, Gabon
 Cluster Bank initial deposit : 250 billion CFA
 Workers : 4500,  repartion by countries: 15%, 35%, 25%, 25%
 
+##### Cluster banking Implementation
 
+Due to heavy corruption, fraud, data leak, etc... we will now define a language.
+
+We can not use scripting language for core operation as internal fraud might leak seed or core method operation. 
+
+We will run black box code (  compiled )
 
 
 
