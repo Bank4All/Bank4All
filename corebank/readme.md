@@ -163,9 +163,9 @@ it does support operation as : make a deposit, extract a limited deposit, accept
 account <>- accountuid, seed reader, seed writer, status, balance uid, last balance result, asofdate_status
 balance <>- database dynamic list of cash flow operations, 
 
-Workflow
+In order to generate our object we are going to use flatbuffer IDL
 
-Every day at 00:00 GMT, a balance ticket will be generated on behalf of account xyz1, all operations of the day will be marked with a asofdate and 
+https://flatbuffers.ar.je
 
 
 
