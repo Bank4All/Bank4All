@@ -16,7 +16,20 @@ Identity of any kind need to be hosted and securised, a flawless design will be 
 Write only ledger give advantage on secure transfered data from a trust storage. 
 It doesn't give a 100% security against the fraudster of identity
 
-as you can observe below, even an incremental design reveal a lot of use case far from ideal
+Let's analyse our banking problem without any assumption first.
+
+An identity is brought to bank account manager, we create a ledger account and give access to it to our client.
+Client is allowed to  substrat,deposit,create loan/borrow structuration, etc
+Account manager is  allowed  to open/create/suspend/resume/refund
+Law enforced manager is allowed to audit/analyse/reject/authorised/freeze/unfreeze/apply judgement fees
+
+We can use a forced-directed graph to display our problem
+
+https://bl.ocks.org/mbostock/raw/1062288/?raw=true
+
+Another approach will be to attack by frequency  on each link between nodes 
+
+without surprise our graph can be oriented althought our first design reveal a lot of flaws
 
 [![](https://mermaid.ink/img/pako:eNpdUk1vwjAM_StWTpsE4t7DJGj5kpiQCtsOLYeodduMNumSdBMj_PeZNrBpuSTye89-tnNmmcqRBazUvK1gH6US6EyTdY7SCnuCkG7Na_GN-gDj8ZPb685YiLEUhgArlHQwe7jzN5iXqB-HPDOv4NIUqO0kxo8OjXUQnmfiHTMrPhFiVePlLz-sMDtOXlGL4uRgMUBhDy20asBeHWAOO6s0L9FBlBQ8KPi4M6jhTQuLoGSGh0EZDUk18mv8S6I2lWgdzJNplqlOWnhZR547HwyrI0ogFI2BEknBqZSDTTJ0B17oRYt7omcuyZAflNcvqXvqeO65PRQjLwpq38Ey2V4d_cu4vNn49eFgdaveKzxz1TO3LQ6rMG7Tx9mINagbLnLa7fkaSpmtsMGUBfTMseBdbVOWygtReWfV7iQzFtBoccS6NqdZRYLTr2gYTbY2ePkBRyy5vg?type=png)](https://mermaid.live/edit#pako:eNpdUk1vwjAM_StWTpsE4t7DJGj5kpiQCtsOLYeodduMNumSdBMj_PeZNrBpuSTye89-tnNmmcqRBazUvK1gH6US6EyTdY7SCnuCkG7Na_GN-gDj8ZPb685YiLEUhgArlHQwe7jzN5iXqB-HPDOv4NIUqO0kxo8OjXUQnmfiHTMrPhFiVePlLz-sMDtOXlGL4uRgMUBhDy20asBeHWAOO6s0L9FBlBQ8KPi4M6jhTQuLoGSGh0EZDUk18mv8S6I2lWgdzJNplqlOWnhZR547HwyrI0ogFI2BEknBqZSDTTJ0B17oRYt7omcuyZAflNcvqXvqeO65PRQjLwpq38Ey2V4d_cu4vNn49eFgdaveKzxz1TO3LQ6rMG7Tx9mINagbLnLa7fkaSpmtsMGUBfTMseBdbVOWygtReWfV7iQzFtBoccS6NqdZRYLTr2gYTbY2ePkBRyy5vg)
 
@@ -25,16 +38,35 @@ as you can observe below, even an incremental design reveal a lot of use case fa
 - we can not protect against false claim
 - we can not protect against foreign and alien identity
 
-#### Implementation detail
+But we will tune our running the bank once core design is setup.
 
-Let's analyse our banking problem without any assumption first.
+####  Implementation based on frequency analysis
 
-We will use a forced-directed graph to display correctly our problem
+##### Cluster banking
 
-https://bl.ocks.org/mbostock/raw/1062288/?raw=true
+We run a bank that will  cease to exist once the project is  finished,  accross  multiple countries with temporary but  purpose regulator/governor
 
-1. Find anchor of problem
-1.2 atomicity
-  element in our graph seems to be 
+1. Governor/Regulator will operate as a centralise identity holder, no workers and no account should exist without proof of seed of ID from regulator
+2. Given identity ledger for multiple entity and roles each delegator will issue power of  act  for  role  manager and account  manager
+3. role  manager will receive a provisionned account to create
+4. Account manager will fill owner access to provisionned account
+5. User/customer/worker will operate their account until total depletion
+
+Oil/Gaz offshore platform for 30 years of exploitation
+Country : France, Angola , Republique du  Congo,  RDC, Gabon
+Dotation : 250 billion CFA
+Workers : 4500,  repartion by countries: 15%, 35%, 25%, 25%
+Central Bank : BCAO, Banque de France, FMI
+
+To manage this operation, we clearly multple issues arising
+
+To secure the project we will then propose a bank architecture as follow
+Oil/Gaz offshore platform for 30 years of exploitation
+Country : France, Angola , Republique du  Congo,  RDC, Gabon
+Cluster Bank initial deposit : 250 billion CFA
+Workers : 4500,  repartion by countries: 15%, 35%, 25%, 25%
+
+
+
 
 
