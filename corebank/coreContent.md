@@ -31,7 +31,7 @@ Let's analyse our banking problem without any assumption first.
 
 We will use a forced-directed graph to display correctly our problem
 
-![Drag Racing](https://bl.ocks.org/mbostock/raw/1062288/?raw=true)
+![Drag Racing][https://bl.ocks.org/mbostock/raw/1062288/?raw=true]
 
 1. Find anchor of problem
 1.2 atomicity
