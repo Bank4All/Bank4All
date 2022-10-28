@@ -122,7 +122,13 @@ Solution :Chorum of ramdisk over null modem, Chorum of server master/slave, Dupl
 Final choice:
 
 [Flatbuffer](https://google.github.io/flatbuffers/)
+
 [SQLite](https://www.sqlite.org/index.html)
+
+[ETL C++](https://www.etlcpp.com)
+
+[Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page)
+
 
 We need a universal format to store regulated data, allowing multiple technology to access and read
 We need a fast write method on harddrive
@@ -130,6 +136,16 @@ We need a fast read method on ramdisk
 We need a vertical solution portable
 We need a horizontale solution portable
 We need data transfert easy and scalable
+We need low latency
+We need fastest way to aggregate column and rows
+
+Step by step, we disqualify fake progressive technology ( Java, C#, Pascal, Lisp) as well as too old technology ( Fortran), too niche ( ADA, Haskel, Julia) or too dangerous( Javascript, R,  Python )
+
+We isolate and qualify C++, Rust and Lua
+
+
+
+
 
 
 
