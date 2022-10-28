@@ -87,6 +87,12 @@ Persistence and performance imply
 - Cloud/Host = Randsome & warfare
 - Multisite = Competences ressources
 
+##### High Frequency Trading Fund Implementation
+
+- Frequency problem: ns decison for a large set of exposures as well as low latency and fast data transfert from market central serve
+- Horizontal problem : Maintain large order within an OMS
+- Vertical problem: Guarantee exposure betwee orders  and  positions
+- Sequence problem: Order position receive unique ordered sequence
 
           
 
