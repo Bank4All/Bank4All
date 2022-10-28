@@ -95,5 +95,28 @@ Persistence and performance imply
 - Sequence problem: Order position receive unique ordered sequence
 
           
+## Technology choice and argue
+
+First question would be, how to start ?
+
+Persistence over event  :
+
+- NMI energy on cold storage, behind ondulator : 1   / 100 ans
+- NMI catastrophic failure on cold storage , water flood,storm,fire : 1 / 20 ans
+- NMI corruption, malfunction on cold storage, EMC, warfare, manufacture MTBF : 1 / 10 ans
+- NMI software on cold storage, virus, attack, loss of integrity :1/5 ans
+- NMI logic on cold storage, wrong release, encoding loss, encryption or upgrade 1/2 ans
+- NMI business on cold storage, audit, balance, seal
+
+Solution : Hard Drive, Disque Magnetoptic, EEPROM, microfiche, micrograve
+
+- NMI energy on hot storage, behind null modem cable : 1 / 2 ans
+- NMI catastrophic failure on hot storage , water flood,storm,fire : 1 / 100 ans
+- NMI corruption, malfunction on hot storage, EMC, warfare, manufacture MTBF : 1 / 100 ans
+- NMI software on hot storage, virus, attack, loss of integrity :1/100 ans
+- NMI logic on hot storage, wrong release, encoding loss, encryption or upgrade 1/2 ans
+- NMI business on hot storage, audit, balance, seal
+
+Solution :Chorum of ramdisk over null modem, Chorum of server master/slave, Duplicata over node + Most present
 
 
