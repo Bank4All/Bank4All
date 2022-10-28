@@ -1,7 +1,5 @@
 ## About Core Banking Content
 
-[![FMAPV][BK4A]](https://github.com/bank4all/BK4A.html)
-
 ###  Core Bank Element
 
 [![](https://mermaid.ink/img/pako:eNp1k02zmjAUhv_KGVbtzPV276IzClqZ-lXRuwkucuGAaSFxQuLUiv-9hwiKt1M2hOR9n_ORw8VLVIre0Ms1Px5gG8QS6BmxMEVphDmDT2_NC_EH9R4Gg6_1VtvKwAZzUdGBEUrWMP50188xzVF_vnHGjQP8y1j8xMSIE8JGFXi9HfoON7MlJ0LAMj7M-MBWqGGVZSKh91hoc9j31QtFudQw6dSSmLpq4q50zqWoXEIwn4RPtgBPBARYa3USlUt52iIyURgK1Soi1IIXsLTlO9XbR5C1qQGmVqaY1rBp_WeUcFuh1QpeX4lRZDDm8hemLSFwBF8jN_glEjmFn7FIJU2oXRi0qplTrbTIBQlCNkoSZaVpTyc3RkHNp3SpwBq-M9cOgDuiv-P0I5sK06Q7_4D7R7lB6vypkS7Ylv_GCp4NU9Y1sXPcmykb15JNhS6hS_Ce0pK9CW1NPxRtGNtc44qYicaSRofOn-Mtn6U_WCj_J52D037TXJoa1sxXRcHfqTyjdK-_azeM4e1j4yzuqtppqyFikT1SE0SlegVED-WCS55j2oWvYcvIXB2Ufmzu-3y_2dHnR4id6-0DvrtlrmiKJZcJ1vDGOtNCSWE-oGPpvXgl6pKLlP7aS0OJPXOgxsTekJYpZtwWJvZieSUpt0ZFZ5l4Q6Mtvnj2mNIMBoLT_156NLVFhde_aJ1TtA?type=png)](https://mermaid.live/edit#pako:eNp1k02zmjAUhv_KGVbtzPV276IzClqZ-lXRuwkucuGAaSFxQuLUiv-9hwiKt1M2hOR9n_ORw8VLVIre0Ms1Px5gG8QS6BmxMEVphDmDT2_NC_EH9R4Gg6_1VtvKwAZzUdGBEUrWMP50188xzVF_vnHGjQP8y1j8xMSIE8JGFXi9HfoON7MlJ0LAMj7M-MBWqGGVZSKh91hoc9j31QtFudQw6dSSmLpq4q50zqWoXEIwn4RPtgBPBARYa3USlUt52iIyURgK1Soi1IIXsLTlO9XbR5C1qQGmVqaY1rBp_WeUcFuh1QpeX4lRZDDm8hemLSFwBF8jN_glEjmFn7FIJU2oXRi0qplTrbTIBQlCNkoSZaVpTyc3RkHNp3SpwBq-M9cOgDuiv-P0I5sK06Q7_4D7R7lB6vypkS7Ylv_GCp4NU9Y1sXPcmykb15JNhS6hS_Ce0pK9CW1NPxRtGNtc44qYicaSRofOn-Mtn6U_WCj_J52D037TXJoa1sxXRcHfqTyjdK-_azeM4e1j4yzuqtppqyFikT1SE0SlegVED-WCS55j2oWvYcvIXB2Ufmzu-3y_2dHnR4id6-0DvrtlrmiKJZcJ1vDGOtNCSWE-oGPpvXgl6pKLlP7aS0OJPXOgxsTekJYpZtwWJvZieSUpt0ZFZ5l4Q6Mtvnj2mNIMBoLT_156NLVFhde_aJ1TtA)
@@ -22,9 +20,21 @@ as you can observe below, even an incremental design reveal a lot of use case fa
 
 [![](https://mermaid.ink/img/pako:eNpdUk1vwjAM_StWTpsE4t7DJGj5kpiQCtsOLYeodduMNumSdBMj_PeZNrBpuSTye89-tnNmmcqRBazUvK1gH6US6EyTdY7SCnuCkG7Na_GN-gDj8ZPb685YiLEUhgArlHQwe7jzN5iXqB-HPDOv4NIUqO0kxo8OjXUQnmfiHTMrPhFiVePlLz-sMDtOXlGL4uRgMUBhDy20asBeHWAOO6s0L9FBlBQ8KPi4M6jhTQuLoGSGh0EZDUk18mv8S6I2lWgdzJNplqlOWnhZR547HwyrI0ogFI2BEknBqZSDTTJ0B17oRYt7omcuyZAflNcvqXvqeO65PRQjLwpq38Ey2V4d_cu4vNn49eFgdaveKzxz1TO3LQ6rMG7Tx9mINagbLnLa7fkaSpmtsMGUBfTMseBdbVOWygtReWfV7iQzFtBoccS6NqdZRYLTr2gYTbY2ePkBRyy5vg?type=png)](https://mermaid.live/edit#pako:eNpdUk1vwjAM_StWTpsE4t7DJGj5kpiQCtsOLYeodduMNumSdBMj_PeZNrBpuSTye89-tnNmmcqRBazUvK1gH6US6EyTdY7SCnuCkG7Na_GN-gDj8ZPb685YiLEUhgArlHQwe7jzN5iXqB-HPDOv4NIUqO0kxo8OjXUQnmfiHTMrPhFiVePlLz-sMDtOXlGL4uRgMUBhDy20asBeHWAOO6s0L9FBlBQ8KPi4M6jhTQuLoGSGh0EZDUk18mv8S6I2lWgdzJNplqlOWnhZR547HwyrI0ogFI2BEknBqZSDTTJ0B17oRYt7omcuyZAflNcvqXvqeO65PRQjLwpq38Ey2V4d_cu4vNn49eFgdaveKzxz1TO3LQ6rMG7Tx9mINagbLnLa7fkaSpmtsMGUBfTMseBdbVOWygtReWfV7iQzFtBoccS6NqdZRYLTr2gYTbY2ePkBRyy5vg)
 
-1. we are not protected against a birth certificat fraud
-2. we are not protected against middle man from governement officer
-3. we can not protect against false claim
-4. we can not protect against foreign and alien identity
+- we are not protected against a birth certificat fraud
+- we are not protected against middle man from governement officer
+- we can not protect against false claim
+- we can not protect against foreign and alien identity
+
+#### Implementation detail
+
+Let's analyse our banking problem without any assumption first.
+
+We will use a forced-directed graph to display correctly our problem
+
+![Drag Racing](https://bl.ocks.org/mbostock/raw/1062288/?raw=true)
+
+1. Find anchor of problem
+1.2 atomicity
+  element in our graph seems to be 
 
 
