@@ -141,12 +141,31 @@ We need fastest way to aggregate column and rows
 
 Step by step, we disqualify fake progressive technology ( Java, C#, Pascal, Lisp) as well as too old technology ( Fortran), too niche ( ADA, Haskel, Julia) or too dangerous( Javascript, R,  Python )
 
-We isolate and qualify C++, Rust and Lua
+We isolate and qualify C++, Rust and Lua for their binding to LLVM, hence allowing Podman docker to pack all binaries and ship module.
 
+C++ because of its ability to do aggressive optimization and high performance
+Lua for its high perforamce for running dynamic rule and conditionnal expressive branch
+Rust for safety execution 
 
+#### Account management
 
+Naive approache would be to create a simple ledger and allow direct operation such as 
 
+Create an account, make a deposit, extract cash, close account, give current sold.
 
+However there is time we will need to suspend all operations of an account , resume it, freeze a partial amount, also high frequency trading can create millions of transactions per day, where some account can be dormant ,also we want multiple level of access and security.
+
+We propose to rigidify mininal definition of accont
+
+An account carry a unique ID, a token access reader, a token access writer, a status holder and a vector of cash flow
+it does support operation as : make a deposit, extract a limited deposit, accept transaction, locked cash, limits and properties 
+
+account <>- accountuid, seed reader, seed writer, status, balance uid, last balance result, asofdate_status
+balance <>- database dynamic list of cash flow operations, 
+
+Workflow
+
+Every day at 00:00 GMT, a balance ticket will be generated on behalf of account xyz1, all operations of the day will be marked with a asofdate and 
 
 
 
