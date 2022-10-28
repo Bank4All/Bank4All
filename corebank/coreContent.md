@@ -72,7 +72,13 @@ Due to heavy corruption, fraud, data leak, etc... we will now define a language.
 
 We can not use scripting language for core operation as internal fraud might leak seed or core method operation. 
 
-We will run black box code (  compiled )
+We will run black box code ( compiled + aggressive optimisation ) to insure a few  people are capable
+
+We also need to address  horizontal  and  vertical problem of audit.
+
+Horizontal problem  : client, trader, audit, supervisor, risk analysis will need to capture  the total exposition of all assets engaged as well as provisionned future exposure.
+Vertical problem: On each exposure  we  need to run deep into timeline to replay scenario and find worst case scenario to prevent future crisis
+
 
 
 
