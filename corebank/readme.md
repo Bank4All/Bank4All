@@ -129,6 +129,8 @@ Final choice:
 
 [Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page)
 
+https://bazel.build/start/cpp
+
 
 We need a universal format to store regulated data, allowing multiple technology to access and read
 We need a fast write method on harddrive
