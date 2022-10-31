@@ -44,6 +44,8 @@ But we will tune our running the bank once core design is setup.
 
 ##### Cluster banking
 
+https://github.com/chronoxor/CppTrader
+
 We run a bank that will  cease to exist once the project is  finished,  accross  multiple countries with temporary but  purpose regulator/governor
 
 1. Governor/Regulator will operate as a centralise identity holder, no workers and no account should exist without proof of seed of ID from regulator
