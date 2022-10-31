@@ -131,6 +131,8 @@ Final choice:
 
 https://bazel.build/start/cpp
 
+https://github.com/Haivision/srt
+
 
 We need a universal format to store regulated data, allowing multiple technology to access and read
 We need a fast write method on harddrive
