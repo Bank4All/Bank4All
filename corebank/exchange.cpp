@@ -1,10 +1,10 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
+// ---------------------------------------------------------------------------------
+// {S} ~  ..  _
+// {S} ScaIIneT company
+// (C) Copyright 2022
+// [L] License : Free of for french domain only
+// #M# Military limitation : Forbidden for missile and drone information processing
+// ---------------------------------------------------------------------------------
 
 #include <iostream>
 #include<ctime>
