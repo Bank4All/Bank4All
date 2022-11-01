@@ -15,12 +15,18 @@
 
 using namespace std;
 
+struct Order 
+{
+    double outstanding;
+    double limit;
+};
+
 struct Dealer 
 {
     long dealerId;
     double balance;
-    map<string,double> properties;
-    map<string,string> descripions;
+
+    vector<pair<long,double> > _orders;
     
 };
 
@@ -28,9 +34,9 @@ struct Asset
 {
     long assetId;
     string name;
-    
+
     vector<pair<Dealer,double> > _quantity;
-    
+   
 };
 
 
@@ -76,7 +82,6 @@ struct MarketDealerConnector : MarketConfig {
             _dealers.resize(npos+1);
             _dealers[npos].dealerId = re;
             
-            cout << "=" << re;
             return pair<bool, Dealer>(true,_dealers[npos]);
         } else {
             return pair<bool, Dealer>(false,_dealers[0]);
@@ -102,52 +107,48 @@ struct MarketAssetStorage : MarketDealerConnector {
     MarketAssetStorage() {
         _assets.reserve(1024);
         _market_assets[local_msg[ERROR_MSG]]=0;
+        _assets.resize(1);
     }
     long getSymbolCode(const string& symbol) {
         auto id = _market_assets.find(symbol);
-        unsigned long long re = 0;
-        int npos ;
-        if ( id == _market_assets.end()) {
-            npos = _assets.size();
-            _assets.resize(npos+1);
-            _market_assets[symbol]=MAX_connection - npos;
-            _assets[npos].name = symbol;
-            _assets[npos].assetId = MAX_connection - npos;
-            
-            return _assets[npos].assetId;
-        } else {
-            return id->second;
-        }
+        
+        return ( id == _market_assets.end()) ? _assets[ERROR_MSG].assetId  : id->second;     
     }
     
-    Asset& createAsset(const string& symbol)
-    {
-        auto id = _market_assets.find(symbol);
-        if ( id == _market_assets.end()) {
-            return _assets[ERROR_MSG];
-        }
-        return _assets[MAX_connection - _market_assets[symbol]];
-    }
-
     const Asset& getAsset(const string& symbol)
     {
         auto id = _market_assets.find(symbol);
-        if ( id == _market_assets.end()) {
-            return _assets[ERROR_MSG];
+        if ( id == _market_assets.end()) { return _assets[ERROR_MSG];  }
+        else {
+            return _assets[MAX_connection - id->second];
         }
-        return _assets[MAX_connection - _market_assets[symbol]];
     }
     
     void addQuantity(const Dealer& fromWho,const string& symbol, double quantity) {
         auto id = _market_assets.find(symbol);
-        if ( id == _market_assets.end()) return;
-        
-        _assets[MAX_connection - _market_assets[symbol]]._quantity.push_back(pair<Dealer,double>(fromWho,quantity));
-        
+        if ( id != _market_assets.end()) {
+            _assets[MAX_connection - id->second]._quantity.push_back(pair<Dealer,double>(fromWho,quantity));
+        }
     
     }
     
 };
+
+Asset& createAsset(MarketAssetStorage& mks, const string& symbol)
+{
+    int npos ;
+    auto id = mks._market_assets.find(symbol);
+    if ( id == mks._market_assets.end()) {
+        npos = mks._assets.size();
+        mks._assets.resize(npos+1);
+        mks._market_assets[symbol]=mks.MAX_connection - npos;
+        mks._assets[npos].name = symbol;
+        mks._assets[npos].assetId = mks.MAX_connection - npos;
+
+      return mks._assets[npos];
+    }else 
+        return mks._assets[mks.MAX_connection - id->second];
+}
 
 int main()
 {
@@ -158,23 +159,24 @@ int main()
     
     cout<<"Hello " << con.second.dealerId << endl;
     
-    cout << " ;" << mkt.invert_token( con.second.dealerId);
-
-    for( int i = 1; i<1000;i++) {
-        int l = mkt.invert_token( con.second.dealerId+i);
-        if( l!=0) cout << "?" << l << " in iter " << i;
-        break;
-    }
-    
-    cout << mkt.getSymbolCode("ACCP.PA");
-    
-    auto as = mkt.getAsset("ACCP.PA");
-    
+    // error , protection, yet managed
+    cout << "symbolcode:" << mkt.getSymbolCode("ACCP.PA") << endl;
     mkt.addQuantity(con.second, "ACCP.PA", 23.6);
     mkt.addQuantity(con0.second, "ACCP.PA", 22.6);
-    
+    auto as = mkt.getAsset("ACCP.PA");
     for( int v =0; v<as._quantity.size(); v++)
-    cout << as._quantity[v].second << "+";
+        cout << as._quantity[v].second << "+";
+    
+    // active , protection, yet managed
+    createAsset(mkt,"ACCP.PA");
+    createAsset(mkt,"BNPP.PA");
+    cout << "symbolcode:" << mkt.getSymbolCode("ACCP.PA") << endl;
+    mkt.addQuantity(con.second, "ACCP.PA", 23.6);
+    mkt.addQuantity(con0.second, "ACCP.PA", 22.6);
+
+    as = mkt.getAsset("ACCP.PA");
+    for( int v =0; v<as._quantity.size(); v++)
+        cout << as._quantity[v].second << "+";
     
     return 0;
 }
