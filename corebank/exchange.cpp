@@ -1,3 +1,11 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
 #include <iostream>
 #include<ctime>
 #include <vector>
@@ -136,7 +144,7 @@ struct MarketAssetStorage : MarketDealerConnector {
         
         _assets[MAX_connection - _market_assets[symbol]]._quantity.push_back(pair<Dealer,double>(fromWho,quantity));
         
-        cout 
+    
     }
     
 };
@@ -160,13 +168,13 @@ int main()
     
     cout << mkt.getSymbolCode("ACCP.PA");
     
+    auto as = mkt.getAsset("ACCP.PA");
+    
     mkt.addQuantity(con.second, "ACCP.PA", 23.6);
     mkt.addQuantity(con0.second, "ACCP.PA", 22.6);
     
+    for( int v =0; v<as._quantity.size(); v++)
+    cout << as._quantity[v].second << "+";
     
     return 0;
 }
-
-
-  
-
