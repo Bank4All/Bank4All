@@ -131,9 +131,14 @@ Final choice:
 
 [Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page)
 
+References :
+
 https://bazel.build/start/cpp
 
 https://github.com/Haivision/srt
+
+https://kb.b2bits.com/
+
 
 
 We need a universal format to store regulated data, allowing multiple technology to access and read
