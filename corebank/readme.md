@@ -139,6 +139,7 @@ https://github.com/Haivision/srt
 
 https://kb.b2bits.com/
 
+https://flatbuffers.ar.je
 
 
 We need a universal format to store regulated data, allowing multiple technology to access and read
@@ -176,7 +177,7 @@ balance <>- database dynamic list of cash flow operations,
 
 In order to generate our object we are going to use flatbuffer IDL
 
-https://flatbuffers.ar.je
+
 
 
 
