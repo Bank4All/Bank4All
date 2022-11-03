@@ -7,3 +7,39 @@
 
 ### Market Connection 
 
+We are going to create a small common interface for any market that hold configuration parameters.
+
+```
+struct marketConfig {
+```
+
+  this market kernel will at least hold a configuration of a maximum of connections;
+  
+```  
+usigned int MAX_connection ;
+```
+
+  so whenever we a building a market we will size our maximum connection
+
+``` 
+    marketConfig(int defaultMaxconnection = 65536) : MAX_connection(defaultMaxconnection) {
+        initErrorDisplay();
+    }
+``` 
+
+  we will also centralise our error message per language/local
+```  
+    enum enERROR {
+        ERROR_MSG=1
+    };
+    map<enERROR,string> local_msg;
+
+    void initErrorDisplay() {
+        local_msg[ERROR_MSG]="Error Message";
+    }
+```   
+
+};
+
+As we are planning to create low latency system, we will try to use as much direct access possible
+
