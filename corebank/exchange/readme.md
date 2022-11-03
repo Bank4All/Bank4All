@@ -46,7 +46,7 @@ As we are planning to create low latency system, we will try to use as much dire
 now we need to create a market extension that allow user to connect/ disconnect 
 
 ``` 
-struct MarketDealerConnector : MarketConfig {
+struct MarketDealerConnector : marketConfig {
  
     map<string,long long> _con_dealers;
     vector<Dealer>  _dealers;
