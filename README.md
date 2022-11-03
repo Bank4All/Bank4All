@@ -104,6 +104,16 @@ Do a search and replace with your text editor for the following: `github_usernam
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Ultra low latency system for all banking operations instead of solely for trading
+
+### Technology in Bank , second core business
+
+By building all bank with a all rounder architecture will allow a running bank smooth and less cpu grindy
+
+This will require business rule engine specialised for bank and finance operations with extrem low latency and remove several critical dependencies
+
+- Trading , notifying, marking, computing, scoring and distributing values should be hosted in one server as much as possible
+
 
 
 <!-- GETTING STARTED -->
@@ -188,7 +198,8 @@ The vault is decomposed into a multiple layer of secrecy
 Unique [read/write] access of client contact guaranteed by either pinpoint location and device identifiation as well as antenna IIOR signature ( non known unique authentification factor )
 Shared [read/write and modify later only] access with Director/Governor contract document and settlement negociation details
 Shared [automate read] Audit/Regulator contract settlement signed and 
-Shared [
+
+
 
 
 ##### A risk manager will study the contract proposal and alert on different risk the bank must operate
