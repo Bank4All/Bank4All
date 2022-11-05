@@ -5,11 +5,22 @@ struct execute {
     
 };
 
+struct pipeline
+{
+    size_t _index;
+    size_t _cursor;
+    vector<pipeline> _child;
+    
+    operator()() {
+        while(_cursor<_index)
+    }
+    
+};
+
 template<class _D,int _S>
-struct pipeline 
+struct pipeline_t 
 {
     _D _data[_S>>4<<4];
-    size_t _index;
     
     pipeline() {
         _index=0;
@@ -28,11 +39,30 @@ struct pipeline
         return *this;
     }
    
+    virtual pipeline& operator--() {
+        return *this;
+    }
+    virtual pipeline& operator|(pipeline& p) {
+        return *this;
+    }
+    virtual pipeline& operator-(pipeline& p) {
+        return *this;
+    }
+    virtual pipeline& operator+(pipeline& p) {
+        return *this;
+    }
+    virtual pipeline& operator<(pipeline& p) {
+        return *this;
+    }
+    virtual pipeline& operator>(pipeline& p) {
+        return *this;
+    }
     
 };
 
 int main()
 {
   pipeline<double,16> p;
-  ;
+  
+  
 }
