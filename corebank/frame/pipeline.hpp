@@ -1,68 +1,55 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
-struct execute {
-    
+using namespace std;
+
+struct executor {
+    virtual executor& operator()()=0;
+    virtual void onBefore() {}
+    virtual void onAfter() {}
+     
 };
 
-struct pipeline
-{
-    size_t _index;
-    size_t _cursor;
-    vector<pipeline> _child;
-    
-    operator()() {
-        while(_cursor<_index)
-    }
+template <class _T>
+struct data : _T {
+    int _level;
     
 };
 
 template<class _D,int _S>
-struct pipeline_t 
+struct pipeline : executor
 {
+    int _index;
     _D _data[_S>>4<<4];
+    vector<executor*> _child;
     
     pipeline() {
         _index=0;
     }
     
-    virtual pipeline& operator<<(pipeline& p) {
+    ~pipeline() {}
+    
+    virtual executor& operator<<(executor& p) {
         return *this;
     }
     
-    virtual pipeline& operator<<(execute& e) {
-        return *this;
-    }
-    
-    virtual pipeline& operator<<(_D& d) {
+    virtual executor& operator<<(_D& d) {
         _data[_index]=d;
         return *this;
     }
    
-    virtual pipeline& operator--() {
+    virtual executor& operator--() {
         return *this;
     }
-    virtual pipeline& operator|(pipeline& p) {
+    virtual executor& operator()() {
         return *this;
-    }
-    virtual pipeline& operator-(pipeline& p) {
-        return *this;
-    }
-    virtual pipeline& operator+(pipeline& p) {
-        return *this;
-    }
-    virtual pipeline& operator<(pipeline& p) {
-        return *this;
-    }
-    virtual pipeline& operator>(pipeline& p) {
-        return *this;
-    }
-    
+    }    
 };
 
 int main()
 {
-  pipeline<double,16> p;
+  pipeline<double,16> p,q,s,t;
   
   
 }
