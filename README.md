@@ -32,7 +32,7 @@
   <h3 align="center">Investment and Monetary fund by vote ( IMFBV )</h3>
 
   <p align="center">
-    AVMF, is a project that will decentralised all task required to run a fund activity, stamp of an claimed operation officer, a legal custody officer for endorsing the risk,
+    FMIPV, is a project that will decentralised all task required to run a fund activity, stamp of an claimed operation officer, a legal custody officer for endorsing the risk,
     a fraud agent and regulatory reporter and clearer controler, etc.. 
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
@@ -79,10 +79,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![FMAPV][Exchange](https://exchange.gatsbyjs.io/)
+[IMFBV][Exchange](https://exchange.gatsbyjs.io/)
 
 
-[![FMAPV][BK4A]](https://github.com/bank4all/BK4A.html)
+[IMFBV][BK4A]](https://github.com/bank4all/BK4A.html)
 
 Main activity of a bank before receiving any cash or play the garantor for a transaction is to insure their own system are not compromised, corrupted or leaking
 
