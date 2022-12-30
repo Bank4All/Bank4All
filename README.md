@@ -453,8 +453,21 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
+### Presenting problem of a banker and Identified customer for automation
 
+Banker need to automate a lot of tasks as presented previously, one primary mission is to remove human factor for sillies and enhance human factor for importance action. As such we should introduce strong weighted characteristic applying to human behavior.
 
+1. A human can not be present into two different area in the same time and space. Considering 
+
+#### Identity throughout unique physical geolocalisation : Proof existence
+
+#### Identity throughout random anonymous access : Proof of request
+
+#### Identity throughout part fixed routes : Proof of path
+
+#### Identity throughout sequence and pattern : Proof of link
+
+### 
 
 See the [open issues](https://github.com/bank4all/bank4all/issues) for a full list of proposed features (and known issues).
 
