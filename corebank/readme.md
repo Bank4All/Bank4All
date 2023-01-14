@@ -200,13 +200,13 @@ Owner of initial non liquid asset : O1
 Owner of final usage of asset or transformed result : O2
 
 At t=0, O2 want to obtain during futures dates t_i a result of C_i, i move from 1 to N
-$$Valuation of Asset O_2 = { Acquisition of Asset O_1 \over N * C_i * ( N - t_i ) * Depreciation of O_1(N) } $$
+$$Valuation of Asset O_2 = { Acquisition of Asset O_1 \over N } * C_i * ( N - t_i ) * Depreciation of O_1(N) $$
 
 Political decision will have an impact on Depreciation and delay or acceleration
 
 Hence including political risk impact into agnostic model can be done by adding a event shift delay
 
-$$Valuation of Asset O_2 =  { Acquisition of Asset O_1 \over N * C_i * ( N - t_i - p_i ) * Depreciation of O_1(N -p_i) } $$
+$$Valuation of Asset O_2 =  { Acquisition of Asset O_1 \over N } C_i * ( N - t_i - p_i ) * Depreciation of O_1(N -p_i) $$
 
 Obsolescence, deprecation, forbid, exclusivity, subvention are forces that will result either in p_i be positive or negative
 
