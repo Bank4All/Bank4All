@@ -181,3 +181,50 @@ In order to generate our object we are going to use flatbuffer IDL
 [![](https://mermaid.ink/img/pako:eNpNkU2OwjAMha9iZTUjwQW6GKm0_MwCCcHsWhZWYtqINimpMxpEufuENpXIynr6nv3sPIS0ikQiKoddDT95aSC8tDg4q7wkd4bl8mvIqbMMad8TD7D62KO7EkPP1mFFn5Nn9SIhe4zUc9Ky0f1tNMPBaUkD5EXqJWtrzu_EEU1FM7IuYv89XkOAd26j_0jN3KY4UuUbDCkilE_N6OapZ7hYBzk1-pfcfYBtMdcwtY-e7ejJrGGHkt8Mu2IW55HRsY4nQdVoQ3DzlvG1UZgxAZsROMmalG8oymIhWnItahWu_XgppeCaWipFEkoVMpWiNM_AoWd7uhspEnaeFsJ3CplyjeGTWpFcsOnp-Q-1x5DT?type=png)](https://mermaid.live/edit#pako:eNpNkU2OwjAMha9iZTUjwQW6GKm0_MwCCcHsWhZWYtqINimpMxpEufuENpXIynr6nv3sPIS0ikQiKoddDT95aSC8tDg4q7wkd4bl8mvIqbMMad8TD7D62KO7EkPP1mFFn5Nn9SIhe4zUc9Ky0f1tNMPBaUkD5EXqJWtrzu_EEU1FM7IuYv89XkOAd26j_0jN3KY4UuUbDCkilE_N6OapZ7hYBzk1-pfcfYBtMdcwtY-e7ejJrGGHkt8Mu2IW55HRsY4nQdVoQ3DzlvG1UZgxAZsROMmalG8oymIhWnItahWu_XgppeCaWipFEkoVMpWiNM_AoWd7uhspEnaeFsJ3CplyjeGTWpFcsOnp-Q-1x5DT)
 
 
+## Politic risk and war risk : resilient over crisis
+
+### Society built over social peace
+
+We can not distinguish individus from their context of crisis, from point of view as banker, a individu carry on his own weight of choice and misfortune.
+Over his own effort two layers carrying their own crisis, those layers are attach to individus by their inability to extract himself from society and his adaptability to overcome global crisis
+
+### Society built over social war
+
+While in conflict zone, secure transaction is meaningfull over secure primary asset and logistic force. A banker need to lower value of trust in storing pivot valuation of asset over relay and faciliate asset distribution and logistic. Hence capital values are shifted from asset storage to logistic flow.
+
+### Modelizing political risk
+
+Valuation of an asset regardless of existance of a bank
+
+Owner of initial non liquid asset : O1
+Owner of final usage of asset or transformed result : O2
+
+At t=0, O2 want to obtain during futures dates t_i a result of C_i, i move from 1 to N
+Valuation of Asset O2 = Acquisition of {Asset O1}/N * C_i * ( N - t_i ) * Depreciation of O1(N)
+
+Political decision will have an impact on Depreciation and delay or acceleration
+
+Hence including political risk impact into agnostic model can be done by adding a event shift delay
+
+Valuation of Asset O2 = Acquisition of {Asset O1}/N * C_i * ( N - t_i - p_i ) * Depreciation of O1(N -p_i)
+
+Obsolescence, deprecation, forbid, exclusivity, subvention are forces that will result either in p_i be positive or negative
+
+### Ledger under constraint of carrying value and transition
+
+We can define a ledger of pivot currency transforming future value of a deposit but it will not survive regime change, devaluation/inflation, war and major crisis or we can create a ledger of value allowing smooth transition between regime and crisis
+
+### Collaterised Asset Backed Bond and Funding tresory cash
+
+We introduce a new way of selling trust for pivot currency management.
+By default a banker will always lend money on a risk default curve :
+
+* Accept cash ( buy zero default credit risk )
+* Lend it with small reward ( sell our credit default risk )
+* Borrow money ( buy zero default over our reward )
+* Lend overnight ( sell our transformation of credit risk )
+
+Those 4 steps are building insurrance and default cash pool of a bank
+
+Rather than integrate all those operations and publish only a simple ledger of cash and transaction we will 
+
