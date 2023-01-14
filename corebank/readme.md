@@ -200,7 +200,7 @@ Owner of initial non liquid asset : O1
 Owner of final usage of asset or transformed result : O2
 
 At t=0, O2 want to obtain during futures dates t_i a result of C_i, i move from 1 to N
-Valuation of Asset O2 = Acquisition of {Asset O1}/N * C_i * ( N - t_i ) * Depreciation of O1(N)
+$$Valuation of Asset O2 = Acquisition of Asset O1 \over N * C_i * ( N - t_i ) * Depreciation of O1(N) $$
 
 Political decision will have an impact on Depreciation and delay or acceleration
 
