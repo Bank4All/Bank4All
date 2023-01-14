@@ -196,7 +196,7 @@ While in conflict zone, secure transaction is meaningfull over secure primary as
 
 Valuation of an asset regardless of existance of a bank
 
-Owner of initial non liquid asset : $O1_$
+Owner of initial non liquid asset : $O_1$
 Owner of final usage of asset or transformed result : $O_2$
 
 At t=0, O2 want to obtain during futures dates $t_i$ a result of $C_i$, i move from 1 to N
