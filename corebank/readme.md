@@ -206,7 +206,7 @@ Political decision will have an impact on Depreciation and delay or acceleration
 
 Hence including political risk impact into agnostic model can be done by adding a event shift delay
 
-Valuation of Asset O2 = Acquisition of {Asset O1}/N * C_i * ( N - t_i - p_i ) * Depreciation of O1(N -p_i)
+$$Valuation of Asset O_2 =  Acquisition of Asset O1 \over { N * C_i * ( N - t_i - p_i ) * Depreciation of O1(N -p_i) } $$
 
 Obsolescence, deprecation, forbid, exclusivity, subvention are forces that will result either in p_i be positive or negative
 
