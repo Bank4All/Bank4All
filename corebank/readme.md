@@ -200,19 +200,23 @@ Owner of initial non liquid asset : $O_1$
 Owner of final usage of asset or transformed result : $O_2$
 
 At t=0, O2 want to obtain during futures dates $t_i$ a result of $C_i$, i move from 1 to N
-$$Valuation of Asset O_2 = { Acquisition of Asset O_1 \over N } * C_i * ( N - t_i ) * Depreciation of O_1(N) $$
+$$Valuation of Asset O_2 = \sum_{i=1}^N { Acquisition of Asset O_1 \over N } * C_i * ( N - t_i ) * Depreciation of O_1(N) $$
 
 Political decision will have an impact on Depreciation and delay or acceleration
 
 Hence including political risk impact into agnostic model can be done by adding a event shift delay
 
-$$Valuation of Asset O_2 =  { Acquisition of Asset O_1 \over N } C_i * ( N - t_i - p_i ) * Depreciation of O_1(N -p_i) $$
+$$Valuation of Asset O_2 =  \sum_{i=1}^N { Acquisition of Asset O_1 \over N } C_i * ( N - t_i - p_i ) * Depreciation of O_1(N -p_i) $$
 
 Obsolescence, deprecation, forbid, exclusivity, subvention are forces that will result either in p_i be positive or negative
 
 ### Ledger under constraint of carrying value and transition
 
 We can define a ledger of pivot currency transforming future value of a deposit but it will not survive regime change, devaluation/inflation, war and major crisis or we can create a ledger of value allowing smooth transition between regime and crisis
+
+Hence our ledger $L$ would be summarize as :
+
+$$ \left( L = \sum_{k=1}^n D_k  \right) $$
 
 ### Collaterised Asset Backed Bond and Funding tresory cash
 
@@ -226,5 +230,12 @@ By default a banker will always lend money on a risk default curve :
 
 Those 4 steps are building insurrance and default cash pool of a bank
 
-Rather than integrate all those operations and publish only a simple ledger of cash and transaction we will 
+Rather than integrate all those operations and publish only a simple ledger of cash and transaction we will publish a true running ledger
+$D_i$ deposite at date $t_i$  
+$F_i$ funding at date $t_i$ rewarding interest or fees or insurance premium $Ir_i$ : $F_i = F_i + Ir_i$
+$B_i$ borrowed cash for multiplying Ir at date $t_i$ paying $Br_i$ : $B_i = Ir_i * ( 1 + Rb_{i+j})$ 
+$L_i$ lended cash overnight 
+
+$$ \left( L = \sum_{i=1}^N D_i - F_i + B_i -L_i \right) $$
+
 
