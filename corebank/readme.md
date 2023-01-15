@@ -267,10 +267,15 @@ A deposit $D_i$ carry an ownership symbolised by a unique id, a sequence of inse
 At minimal version of a ledger operation would then be
 
 2^64 integer where 2^33 is guaranteed to be a bijective relation of all humans, firms and groups
+
 2^64 YYYY encoded on 2^16 * MMDD encoded in 2^9 * 2^31 number of operations per day
+
 2^64 for any amount 
+
 2^8 for currency code
+
 2^16 type of compliance and version
+
 2^48 origin of operations ( economical code , country , sector, ... )
 
 An optimal format would then be a collection of vector of double with their normalized dictionnary for detraming
