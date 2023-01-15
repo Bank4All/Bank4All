@@ -238,3 +238,13 @@ $Lo_i$ lended cash overnight
 
 $$  L = \left( \sum_{i=1}^N D_i - F_i + B_i - Lo_i \right) $$
 
+Then we include now transition over society peace / war 
+
+$Fw_i$ flow of logistic between $i-1$ and $i$ and replace funding insurance
+$Lo_i$ is replaced by $Cu_i$ custody between $i-1$ and $i$ period
+
+hence we have similar modeling 
+
+$$  L = \left( \sum_{i=1}^N D_i - Fw_i + B_i - Cu_i \right) $$
+
+
