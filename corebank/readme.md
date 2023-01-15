@@ -248,3 +248,32 @@ hence we have similar modeling
 $$  L = \left( \sum_{i=1}^N D_i - Fw_i + B_i - Cu_i \right) $$
 
 
+## Digital operations of ledger
+
+### Definition of concept
+
+#### Digital identity of operations 
+
+A deposit $D_i$ carry an ownership symbolised by a unique id, a sequence of insertion, currency and amount , economical code, fraud watermark and compliance mark
+
+* ownership unique id represent a superstructure of id that follow this logic [cluster id][cluster child id][cluser_rout][register number]  
+* sequence of insertion either solved by centralised token proof of order or operation or utc sync timestamp
+* currency code
+* amount code 
+* economical code for applying regulatory rules
+* compliance mark stamping proof of work and version of check done
+* fraud watermark hold origin of operations
+
+At minimal version of a ledger operation would then be
+
+2^64 integer where 2^33 is guaranteed to be a bijective relation of all humans, firms and groups
+2^64 YYYY encoded on 2^16 * MMDD encoded in 2^9 * 2^31 number of operations per day
+2^64 for any amount 
+2^8 for currency code
+2^16 type of compliance and version
+2^48 origin of operations ( economical code , country , sector, ... )
+
+An optimal format would then be a collection of vector of double with their normalized dictionnary for detraming
+
+
+
