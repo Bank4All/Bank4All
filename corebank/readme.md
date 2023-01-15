@@ -234,8 +234,7 @@ Rather than integrate all those operations and publish only a simple ledger of c
 $D_i$ deposite at date $t_i$  
 $F_i$ funding at date $t_i$ rewarding interest or fees or insurance premium $Ir_i$ : $F_i = F_i + Ir_i$
 $B_i$ borrowed cash for multiplying Ir at date $t_i$ paying $Br_i$ : $B_i = Ir_i * ( 1 + Rb_{i+j})$ 
-$L_i$ lended cash overnight 
+$Lo_i$ lended cash overnight 
 
-$$ \left( L = \sum_{i=1}^N D_i - F_i + B_i -L_i \right) $$
-
+$$  L = \left( \sum_{i=1}^N D_i - F_i + B_i - Lo_i \right) $$
 
