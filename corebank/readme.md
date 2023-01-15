@@ -280,5 +280,11 @@ At minimal version of a ledger operation would then be
 
 An optimal format would then be a collection of vector of double with their normalized dictionnary for detraming
 
+#### Ledger protection over request abuse for sequence id
 
+A primary problem of requesting a sequence of insertion is to make sure each sequence are used for a physical written operation
+
+1. A request token would be then be given 
+2. A sequence would be then incremented based on access token
+3. A provisionning could be demanded allowing clustering and decentralised operations
 
