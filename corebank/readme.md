@@ -8,6 +8,7 @@
 
 * [Lua](https://fr.wikipedia.org/wiki/Lua)
 * [C++](https://en.wikipedia.org/wiki/C%2B%2B17)
+* [Nim](https://nim-lang.org/)
 
 #### Design by relation
 
@@ -123,6 +124,7 @@ Solution :Chorum of ramdisk over null modem, Chorum of server master/slave, Dupl
 
 Final choice:
 
+[Scripting Prototyping Module : Nim](https://nim-lang.org/)
 [Flatbuffer](https://google.github.io/flatbuffers/)
 
 [SQLite](https://www.sqlite.org/index.html)
@@ -153,11 +155,10 @@ We need fastest way to aggregate column and rows
 
 Step by step, we disqualify fake progressive technology ( Java, C#, Pascal, Lisp) as well as too old technology ( Fortran), too niche ( ADA, Haskel, Julia) or too dangerous( Javascript, R,  Python )
 
-We isolate and qualify C++, Rust and Lua for their binding to LLVM, hence allowing Podman docker to pack all binaries and ship module.
+We isolate and qualify C++ and Nim for their binding to LLVM, hence allowing Podman docker to pack all binaries and ship module.
 
 C++ because of its ability to do aggressive optimization and high performance
-Lua for its high perforamce for running dynamic rule and conditionnal expressive branch
-Rust for safety execution 
+Nim to generate frontend/backend as well as non aggressive optimization 
 
 #### Account management
 
