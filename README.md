@@ -98,7 +98,7 @@ Do a search and replace with your text editor for the following: `github_usernam
 
 ### Built With
 
-* [Lua](https://fr.wikipedia.org/wiki/Lua)
+* [Nim](https://nim-lang.org/)
 * [C++](https://en.wikipedia.org/wiki/C%2B%2B17)
 * [Github.io](https://github.io/)
 
