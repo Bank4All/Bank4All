@@ -8,14 +8,14 @@
 > Decentralized or not, all bank services will need at one point to receive notification
 > of key modification
 >> ### SELECT last version
->>> Scheduled Batches
->>> Scheduled Reports
+>>> - Scheduled Batches
+>>> - Scheduled Reports
 >> ### ON INSERT BEFORE
->>> Desactivate Caches
->>> Alert impact Tracer
+>>> - Desactivate Caches
+>>> - Alert impact Tracer
 >> ### ON INSERT AFTER
->>> Recompute real time system
->>> Recompute Keys dependancies
+>>> - Recompute real time system
+>>> - Recompute Keys dependancies
 
 > ## Data Quality manangement
 >
